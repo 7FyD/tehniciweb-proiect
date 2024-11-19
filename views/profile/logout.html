@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Logout - Recipe Void</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/profile.css" />
+    <script src="../../js/middleware.js"></script>
+    <script src="../../js/logout.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">Recipe Void</h1>
+      <nav class="nav-buttons">
+        <div class="full-nav">
+          <a href="../index.html">Home</a>
+          <a href="../recipes.html">Recipes</a>
+          <a class="auth" href="../login.html">Login</a>
+        </div>
+        <div class="menu-nav">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="../index.html">Home</a>
+            <a href="../recipes.html">Recipes</a>
+            <a class="auth" href="../login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <aside class="sidebar">
+        <nav>
+          <a href="../profile.html">Profile</a>
+          <a href="security.html">Security</a>
+          <a href="saved-recipes.html">Saved Recipes</a>
+          <a href="my-recipes.html">My Recipes</a>
+          <a href="logout.html" class="active">Logout</a>
+        </nav>
+      </aside>
+
+      <section class="profile-card">
+        <div class="profile-info">
+          <h2>Logout Confirmation</h2>
+          <p class="logout-message">Are you sure you want to logout?</p>
+          <button id="logout" class="save-btn">Logout</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

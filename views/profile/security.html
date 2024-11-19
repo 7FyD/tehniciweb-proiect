@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/profile.css" />
+    <script src="../../js/security.js"></script>
+    <script src="../../js/middleware.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">Recipe Void</h1>
+      <nav class="nav-buttons">
+        <div class="full-nav">
+          <a href="../index.html">Home</a>
+          <a href="../recipes.html">Recipes</a>
+          <a class="auth" href="../login.html">Login</a>
+        </div>
+        <div class="menu-nav">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="../index.html">Home</a>
+            <a href="../recipes.html">Recipes</a>
+            <a class="auth" href="../login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <aside class="sidebar">
+        <nav>
+          <a href="../profile.html">Profile</a>
+          <a href="security.html" class="active">Security</a>
+          <a href="saved-recipes.html">Saved Recipes</a>
+          <a href="my-recipes.html">My Recipes</a>
+          <a href="logout.html">Logout</a>
+        </nav>
+      </aside>
+
+      <section class="profile-card">
+        <form id="email-form">
+          <div class="profile-info">
+            <h2>Change Email</h2>
+            <div class="input-group">
+              <label for="email">New Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <button type="submit" class="save-btn">Update Email</button>
+          </div>
+        </form>
+
+        <hr class="divider" />
+
+        <form id="password-form">
+          <div class="profile-info">
+            <h2>Change Password</h2>
+            <div class="input-group">
+              <label for="old-password">Current Password</label>
+              <input type="password" id="old-password" required />
+            </div>
+
+            <div class="input-group">
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" required />
+            </div>
+
+            <div class="input-group">
+              <label for="confirm-password">Confirm New Password</label>
+              <input type="password" id="confirm-password" required />
+            </div>
+
+            <button type="submit" class="save-btn">Update Password</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

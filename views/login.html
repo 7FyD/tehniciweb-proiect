@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/login.js"></script>
+    <script src="../js/middleware.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">Recipe Void</h1>
+      <nav class="nav-buttons">
+        <div class="full-nav">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="login.html">Login</a>
+        </div>
+        <div class="menu-nav">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="login-container">
+      <!-- logo: <img/> -->
+      <div class="text-container">
+        <h2>Sign in</h2>
+        <h4>Access your saved recipes</h4>
+      </div>
+      <form id="login-form" class="credentials-container">
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" type="email" />
+        </div>
+        <div>
+          <label>Password</label>
+          <div style="position: relative">
+            <input id="password" type="password" />
+            <img
+              src="../public/open-eye.svg"
+              id="show-password"
+              width="32rem"
+            />
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="links-container">
+        <a href="signup.html">Sign up</a>
+        <a href="forgot-password.html">Forgot password?</a>
+      </div>
+      <p id="error"></p>
+    </section>
+  </body>
+</html>
